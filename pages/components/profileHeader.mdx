@@ -1,0 +1,24 @@
+# Profile Header
+
+Renders a profile header component.
+
+```tsx
+import { ProfileHeader } from "@lens-protocol/react-native-lens-ui-kit";
+<ProfileHeader
+  profile={profile}
+  // or profileId={profileId}
+/>;
+```
+
+## Default props
+
+```
+profileId = null
+profile = null
+onFollowingPress = profile => console.log({ profile })
+onFollowersPress = profile => console.log({ profile })
+```
+
+## Styles
+
+[ProfileHeaderStyles](https://github.com/lens-protocol/react-native-lens-ui-kit/blob/main/src/types.ts#L157)

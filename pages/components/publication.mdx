@@ -1,0 +1,29 @@
+# Publication
+
+Renders an individual publication.
+
+```tsx
+import { Publication } from "@lens-protocol/react-native-lens-ui-kit";
+<Publication publication={publication} />;
+```
+
+## Default props
+
+```
+publication = undefined (required)
+signedInUser = null
+hideLikes = false
+hideComments = false
+hideMirrors = false
+hideCollects = false
+# Functions
+onCollectPress = publication => console.log({ publication })
+onCommentPress = publication => console.log({ publication })
+onMirrorPress= publication => console.log({ publication })
+onLikePress = publication => console.log({ publication })
+onProfileImagePress = publication => console.log({ publication })
+```
+
+## Styles
+
+[PublicationStyles](https://github.com/lens-protocol/react-native-lens-ui-kit/blob/main/src/types.ts#L137)

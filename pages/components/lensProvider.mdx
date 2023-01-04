@@ -1,0 +1,23 @@
+# LensProvider
+
+Allows you to pass global configurations to React Native Lens UI Kit.
+
+## Options
+
+```
+environment? = 'testnet' | 'mainnet' (default) | 'sandbox'
+theme? = 'light' (default) | 'dark
+```
+
+## Usage
+
+```tsx
+import {
+  LensProvider,
+  Theme,
+  Environment,
+} from "@lens-protocol/react-native-lens-ui-kit";
+<LensProvider environment={Environment.mainnet} theme={Theme.dark}>
+  <App />
+</LensProvider>;
+```

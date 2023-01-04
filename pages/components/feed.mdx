@@ -1,0 +1,98 @@
+# Feed
+
+A feed of posts from Lens.
+
+```tsx
+import { Feed } from "@lens-protocol/react-native-lens-ui-kit";
+<Feed />;
+```
+
+## Default props
+
+```
+query = {
+  name: "explorePublications",
+  publicationTypes: ["POST", "COMMENT", "MIRROR"],
+  sortCriteria: "LATEST",
+  limit: 20
+}
+ListHeaderComponent = null
+ListFooterComponent = null
+feed = null
+signedInUser = null
+hideLikes = false
+hideComments = false
+hideMirrors = false
+hideCollects = false
+infiniteScroll = true
+onEndReachedThreshold = .65
+# Functions
+onCollectPress = publication => console.log({ publication })
+onCommentPress = publication => console.log({ publication })
+onMirrorPress = publication => console.log({ publication })
+onLikePress = publication => console.log({ publication })
+onProfileImagePress = profile => console.log({ profile })
+```
+
+## Styles
+
+```
+styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  loadingIndicatorStyle : {
+    marginVertical: 20
+  },
+  noCommentsMessage: {
+    margin: 20,
+    fontSize: 14,
+    fontWeight: '500'
+  }
+})
+```
+
+### Query options for `Feed`
+
+**explorePublications (default)**  
+[explorePublications](./src/graphql/explorePublications.graphql)
+
+**getPublications**  
+[getPublications](./src/graphql/getPublications.graphql)
+
+**getComments**  
+[getPublications](./src/graphql/getPublications.graphql)
+
+## Profiles
+
+A list of profiles
+
+```tsx
+import { Profiles } from "@lens-protocol/react-native-lens-ui-kit";
+<Profiles />;
+```
+
+## Default Props
+
+```
+query = {
+  name: 'getFollowing',
+  sortCriteria: 'MOST_FOLLOWERS',
+  limit: 25
+}
+profileData = null
+onEndReachedThreshold = .7
+infiniteScroll = true
+signedInUserAddress=null
+# Functions
+onFollowPress = (profile, profiles) => console.log({ profile })
+onProfilePress = profile => console.log({ profile })
+```
+
+## Query options for `Profiles`
+
+**exploreProfiles (default)**  
+[exploreProfiles](./src/graphql/exploreProfiles.graphql)
+
+**getFollowing**  
+[getFollowing](./src/graphql/getFollowing.graphql)

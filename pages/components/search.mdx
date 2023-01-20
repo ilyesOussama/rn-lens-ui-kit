@@ -1,0 +1,44 @@
+# Search
+
+Allow you to search for users and publications.
+
+```tsx
+import { Search } from "@lens-protocol/react-native-lens-ui-kit";
+<Search />;
+```
+
+## Default props
+
+```
+  searchType (default = profile),
+  styles = baseStyles,
+  placeholder (string, default = "Search"),
+  autoCapitalize,
+  selectionColor = (default = '#b0b0b0'),
+  infiniteScroll = true,
+  ListFooterComponent,
+  publicationStyles,
+  signedInUser,
+  hideLikes = false,
+  hideComments = false,
+  hideMirrors = false,
+  hideCollects = false,
+  iconColor,
+  profilesQuery (default = {
+    profileSortCriteria: ProfileSortCriteria.MostFollowers,
+    limit: 25
+  })
+  publicationsQuery (default = = {
+    publicationTypes: [PublicationTypes.Post, PublicationTypes.Comment, PublicationTypes.Mirror],
+    publicationSortCriteria: PublicationSortCriteria.Latest,
+    limit: 25
+  })
+  onEndReachedThreshold = .65,
+  onFollowPress  = profile => console.log({ profile }),
+  onProfilePress = profile => console.log({ profile }),
+  onCollectPress = publication => console.log({ publication }),
+  onCommentPress = publication => console.log({ publication }),
+  onMirrorPress = publication => console.log({ publication }),
+  onLikePress = publication => console.log({ publication }),
+  onProfileImagePress = publication => console.log({ publication }),
+```

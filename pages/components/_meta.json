@@ -3,6 +3,7 @@
   "profiles": "Profiles",
   "profileHeader": "Profile Header",
   "publication": "Publication",
+  "search": "Search",
   "profileListItem": "ProfileListItem",
   "lensProvider": "Lens Provider"
 }
